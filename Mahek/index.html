@@ -20,11 +20,15 @@
 			background-color:rgba(135, 206, 250,0.8);
 			 font-color: white;
 		}
-		html{
-			background: url("https://modernthemes.net/wp-content/uploads/2014/09/theme-				overview-1024x601.jpg") no-repeat center fixed;
-    			background-size: cover;
-    		}
+		html { 
+ 			 background: url("bground.jpg") no-repeat center fixed; 
+ 			 -webkit-background-size: cover;
+			  -moz-background-size: cover;
+ 			 -o-background-size: cover;
+ 			 background-size: cover;
+		}
 		body{
+			text-align:center;
 			color:black;
 			 font-weight:bold;
 		}
@@ -34,36 +38,44 @@
 <body>
  <div class="container">
 	<h2>Mahek Negandhi</h2>
-	
-	
+	<h3>try(){
+		while(success!=1){
+		try();
+		}
+		}</h3>
 	<ul class="nav nav-tabs">
 		<li class="active"><a data-toggle="tab" href="#about_me">About Me</a></li>
-		<li><a data-toggle="tab" href="#academics">Academics</a></li>
-		<li><a data-toggle="tab" href="#blogs">Blogs</a></li>
-		<li><a data-toggle="tab" href="#contact">Contact</a></li>
+		<li><a data-toggle="tab" href="#academics" onclick="func_academics()">Academics</a></li>
+		<li><a data-toggle="tab" href="#blogs" onclick="func_blogs()">Blogs</a></li>
+		<li><a data-toggle="tab" href="#contact" onclick="func_contact()">Contact</a></li>
 	</ul>
-
+	<script>
+		function func_academics(){document.getElementById("academics").style.display="block";document.getElementById("blogs").style.display="none";document.getElementById("contact").style.display="none";}
+		function func_blogs(){document.getElementById("blogs").style.display="block";document.getElementById("academics").style.display="none";document.getElementById("contact").style.display="none";}
+		function func_contact(){document.getElementById("contact").style.display="block";document.getElementById("academics").style.display="none";document.getElementById("blogs").style.display="none";}
+	</script>
 	<div class="tab-content">
-		<div id="about_me" class="tab-pane fade in active">
-		<h3>About Me</h3>
-		<p>People find me to be an upbeat, self-motivated team player and leader with excellent 		communication skills. I am a student at IIPS, DAVV who is a budding programmer and an 		intern at AIESEC. I enjoy speaking to people, and the perspective that it gives me has 		strengthened me as a listener who is self aware.</p>
+		<div id="about_me" class="tab-pane fade in active" >
+		<h3>About Me</h3><br/><br />
+		<p>People find me to be an upbeat, self-motivated team player and leader with excellent communication skills. I am a student at IIPS, DAVV who is a budding programmer and an intern at AIESEC. I enjoy 		speaking to people, and the perspective that it gives me has strengthened me as a listener who is self aware.I have been divivding my time between programming and reading these days to enhance my skill set.When 		I'm not coding you'll find me in a room teaching a group of keen learners </p>
 		</div>
 
-		<div id="academics" class="tab-pane fade in active">
+		<div id="academics" class="tab-pane fade in active" style="display:none;" >
 		<h3>ACADEMICS</h3>
 		<p> Institutional Courses </p>
 		<table>
 			<tr>
 				<th>Course</th>
-				<th>Institute</th>
+				<th style="text-align:center;">Institute</th>
 				<th>CGPA</th>
 			</tr>
 			<tr>
-				<td>B.Tech I year</th>
-				<td>International Institute of Professional Studies , DAVV</td>
+				<td>M.Tech(integrated) I year</th>
+				<td style="text-align:left;">International Institute of Professional Studies , DAVV</td>
 				<td>9.21 CGPA</td>
 			</tr>
 		</table>
+		<br/><br/>
 		<p> School </p>
 		<table>
 			<tr>
@@ -90,19 +102,19 @@
 		</table>
 		</div>
 
-		<div id="blogs" class="tab-pane fade in active">
-		<h3>BLOGS</h3>
-		<p><a href="http://mahek-negandhi.blogspot.in/2016/12/sort-by-relevance-hiding-				imporatant-data.html">Sort By Relevance (Filter Bubble) - Hiding important Data</a></p>
+		<div id="blogs" class="tab-pane fade in active" style="display:none;">
+		<h3>BLOGS</h3><br/><br/>
+		<p><a href="http://mahek-negandhi.blogspot.in/2016/12/sort-by-relevance-hiding-imporatant-data.html">Sort By Relevance (Filter Bubble) - Hiding important Data</a></p>
 		</div>
 
-		<div id="contact" class="tab-pane fade in active">
-		<h3>CONTACT</h3>
+		<div id="contact" class="tab-pane fade in active" style="display:none;">
+		<h3>CONTACT</h3><br/>
 		<p>Get in Touch</p>
-		<p>Feel free to drop me a line at <a href="mailto:negandhi.mahek@gmail.com"> 		negandhi.mahek@gmail.com</a></p>
-		<p>Or Catch me on!!	
-		<a href="https://github.com/AjeetK"><button class="btn btn-github"> </button></a>
+		<p>Feel free to drop me a line at <a href="mailto:negandhi.mahek@gmail.com"> 		negandhi.mahek@gmail.com</a></p><br/>
+		<p>Or Catch me on!!	<br>
+		<a href="https://github.com/maheknegandhi"><img src = "https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" style="width:100px; height:100px;"></a><h4>Github</h4><br>
 		
-		<a href="https://www.facebook.com/ajeet.khan.5"><button class="btn btn-facebook"> 				</button></a>
+		<a href="https://www.facebook.com/negandhi.mahek"><img src="http://1.bp.blogspot.com/-znUUXqw9F5o/URusQnMJssI/AAAAAAAAAB4/c9BA4pmq3hI/s1600/facebook+logo+4.jpg" style="width:100px; 		height:100px;"></a><h4>Facebook</h4>
 			
 		</p>
 		</div>
